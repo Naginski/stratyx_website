@@ -4,6 +4,7 @@ import logo from "@/assets/stratyx-logo.jpg";
 const nav = [
   { href: "#sobre", label: "Sobre" },
   { href: "#solucoes", label: "Soluções" },
+  { href: "#ia", label: "IA" },
   { href: "#tecnologias", label: "Tecnologias" },
   { href: "#diferencial", label: "Diferencial" },
   { href: "#contato", label: "Contato" },
