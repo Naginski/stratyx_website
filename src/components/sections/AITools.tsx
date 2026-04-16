@@ -1,16 +1,16 @@
 const aiTools = [
   { name: "ChatGPT", logo: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" },
-  { name: "Claude", logo: "https://upload.wikimedia.org/wikipedia/commons/1/14/Claude_AI_symbol.svg" },
-  { name: "Gemini", logo: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" },
+  { name: "Claude", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Claude_AI_symbol.svg/960px-Claude_AI_symbol.svg.png" },
+  { name: "Gemini", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Google_Gemini_icon_2025.svg/960px-Google_Gemini_icon_2025.svg.png" },
   { name: "Lovable", logo: "https://lovable.dev/icon.svg" },
-  { name: "Vercel", logo: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Vercel_logo_black.svg" },
-  { name: "OpenAI", logo: "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" },
-  { name: "Perplexity", logo: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Perplexity_AI_logo.svg" },
+  { name: "Vercel", logo: "https://www.svgrepo.com/show/354513/vercel-icon.svg" },
+  { name: "OpenAI", logo: "https://www.svgrepo.com/show/306500/openai.svg" },
+  { name: "Perplexity", logo: "https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/light/perplexity-color.png" },
   { name: "Midjourney", logo: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Midjourney_Emblem.png" },
   { name: "GitHub Copilot", logo: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" },
   { name: "Hugging Face", logo: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg" },
   { name: "Cursor", logo: "https://www.cursor.com/apple-touch-icon.png" },
-  { name: "n8n", logo: "https://upload.wikimedia.org/wikipedia/commons/5/53/N8n-logo-new.svg" },
+  { name: "n8n", logo: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/n8n-icon.png" },
 ];
 
 export function AITools() {
