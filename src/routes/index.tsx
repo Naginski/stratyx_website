@@ -5,6 +5,7 @@ import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { Solutions } from "@/components/sections/Solutions";
 import { AI } from "@/components/sections/AI";
+import { AITools } from "@/components/sections/AITools";
 import { Technologies } from "@/components/sections/Technologies";
 import { Differential } from "@/components/sections/Differential";
 import { Results } from "@/components/sections/Results";
@@ -42,6 +43,7 @@ function Index() {
         <About />
         <Solutions />
         <AI />
+        <AITools />
         <Technologies />
         <Differential />
         <Results />
