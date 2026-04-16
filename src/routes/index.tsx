@@ -4,6 +4,7 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
 import { Solutions } from "@/components/sections/Solutions";
+import { Agro } from "@/components/sections/Agro";
 import { AI } from "@/components/sections/AI";
 import { AITools } from "@/components/sections/AITools";
 import { Technologies } from "@/components/sections/Technologies";
@@ -42,6 +43,7 @@ function Index() {
         <Hero />
         <About />
         <Solutions />
+        <Agro />
         <AI />
         <AITools />
         <Technologies />
