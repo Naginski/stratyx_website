@@ -5,7 +5,7 @@ const techs = [
   },
   {
     name: "Excel / VBA",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Microsoft_Office_Excel_%282025%E2%80%93present%29.svg/500px-Microsoft_Office_Excel_%282025%E2%80%93present%29.svg.png",
   },
   {
     name: "SQL",
@@ -17,7 +17,7 @@ const techs = [
   },
   {
     name: "Claude",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/1/14/Claude_AI_symbol.svg",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Claude_AI_symbol.svg/960px-Claude_AI_symbol.svg.png",
   },
   {
     name: "ChatGPT",
