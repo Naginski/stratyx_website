@@ -30,6 +30,8 @@
   --color-ring: var(--ring);
   --color-cyan: var(--cyan);
   --color-cyan-foreground: var(--cyan-foreground);
+  --color-primary-deep: var(--primary-deep);
+  --color-primary-glow: var(--primary-glow);
   --font-sans: "Poppins", system-ui, sans-serif;
   --font-display: "Montserrat", system-ui, sans-serif;
 }
