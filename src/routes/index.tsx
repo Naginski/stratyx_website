@@ -1,26 +1,51 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useReveal } from "@/hooks/useReveal";
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/sections/Hero";
+import { About } from "@/components/sections/About";
+import { Solutions } from "@/components/sections/Solutions";
+import { Technologies } from "@/components/sections/Technologies";
+import { Differential } from "@/components/sections/Differential";
+import { Results } from "@/components/sections/Results";
+import { CTA } from "@/components/sections/CTA";
+import { Footer } from "@/components/sections/Footer";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "STRATYX — Transformando dados em decisões" },
+      {
+        name: "description",
+        content:
+          "Inteligência Artificial aplicada a processos, Business Intelligence e automação. Transformamos dados em estratégia para empresas eficientes.",
+      },
+      { property: "og:title", content: "STRATYX — Transformando dados em decisões" },
+      {
+        property: "og:description",
+        content:
+          "IA aplicada, BI, automação e otimização de processos. Clareza estratégica para decisões mais rápidas e assertivas.",
+      },
+      { property: "og:type", content: "website" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  useReveal();
+  return (
+    <>
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Solutions />
+        <Technologies />
+        <Differential />
+        <Results />
+        <CTA />
+      </main>
+      <Footer />
+    </>
+  );
 }
