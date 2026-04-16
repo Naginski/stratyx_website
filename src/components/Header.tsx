@@ -44,7 +44,9 @@ export function Header() {
             </a>
           ))}
           <a
-            href="#contato"
+            href="https://wa.me/5565993334646?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20STRATYX."
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full bg-cyan px-5 py-2 text-sm font-semibold text-cyan-foreground transition-all hover:scale-105 hover:shadow-glow"
           >
             Fale conosco

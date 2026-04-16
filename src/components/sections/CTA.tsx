@@ -15,7 +15,9 @@ export function CTA() {
         </p>
         <div className="reveal reveal-delay-2 mt-10">
           <a
-            href="#contato"
+            href="https://wa.me/5565993334646?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20um%20especialista%20da%20STRATYX."
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 rounded-full bg-cyan px-10 py-5 text-lg font-semibold text-cyan-foreground transition-all hover:scale-105 hover:shadow-glow pulse-anim"
           >
             Falar com especialista
