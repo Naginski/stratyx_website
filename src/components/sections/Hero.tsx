@@ -21,7 +21,9 @@ export function Hero() {
         </p>
         <div className="reveal reveal-delay-3 mt-10 flex flex-wrap items-center justify-center gap-4">
           <a
-            href="#contato"
+            href="https://wa.me/5565993334646?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20STRATYX."
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 rounded-full bg-cyan px-8 py-4 font-semibold text-cyan-foreground transition-all hover:scale-105 hover:shadow-glow"
           >
             Fale conosco

@@ -1,9 +1,28 @@
 const techs = [
-  { name: "Power BI", color: "from-yellow-400 to-orange-500" },
-  { name: "Excel / VBA", color: "from-green-500 to-emerald-600" },
-  { name: "SQL", color: "from-blue-500 to-cyan-600" },
-  { name: "ERP", color: "from-purple-500 to-indigo-600" },
-  { name: "XML Fiscal", color: "from-rose-500 to-pink-600" },
+  {
+    name: "Power BI",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg",
+  },
+  {
+    name: "Excel / VBA",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg",
+  },
+  {
+    name: "SQL",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png",
+  },
+  {
+    name: "SAP ERP",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/5/59/SAP_2011_logo.svg",
+  },
+  {
+    name: "Claude",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/1/14/Claude_AI_symbol.svg",
+  },
+  {
+    name: "ChatGPT",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg",
+  },
 ];
 
 export function Technologies() {
@@ -27,14 +46,14 @@ export function Technologies() {
             <line x1="100" y1="100" x2="900" y2="100" stroke="oklch(0.78 0.13 215 / 0.3)" strokeWidth="1" strokeDasharray="4 6" />
           </svg>
 
-          <div className="relative grid grid-cols-2 gap-6 md:grid-cols-5">
+          <div className="relative grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-6">
             {techs.map((t, i) => (
               <div
                 key={t.name}
                 className={`reveal reveal-delay-${(i % 4) + 1} group flex flex-col items-center`}
               >
-                <div className={`flex h-24 w-24 items-center justify-center rounded-2xl bg-gradient-to-br ${t.color} shadow-elegant transition-all duration-500 group-hover:scale-110 group-hover:rotate-6`}>
-                  <span className="text-2xl font-bold text-white">{t.name.charAt(0)}</span>
+                <div className="flex h-24 w-24 items-center justify-center rounded-2xl border border-border bg-card p-4 shadow-card transition-all duration-500 group-hover:scale-110 group-hover:-rotate-3 group-hover:shadow-elegant">
+                  <img src={t.logo} alt={t.name} className="h-full w-full object-contain" loading="lazy" />
                 </div>
                 <span className="mt-4 text-center text-sm font-semibold text-foreground">{t.name}</span>
               </div>
