@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { Helmet } from "react-helmet-async";
 import { useReveal } from "@/hooks/useReveal";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/sections/Hero";
@@ -13,31 +13,23 @@ import { Results } from "@/components/sections/Results";
 import { CTA } from "@/components/sections/CTA";
 import { Footer } from "@/components/sections/Footer";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "STRATYX — Transformando dados em decisões" },
-      {
-        name: "description",
-        content:
-          "Inteligência Artificial aplicada a processos, Business Intelligence e automação. Transformamos dados em estratégia para empresas eficientes.",
-      },
-      { property: "og:title", content: "STRATYX — Transformando dados em decisões" },
-      {
-        property: "og:description",
-        content:
-          "IA aplicada, BI, automação e otimização de processos. Clareza estratégica para decisões mais rápidas e assertivas.",
-      },
-      { property: "og:type", content: "website" },
-    ],
-  }),
-  component: Index,
-});
-
-function Index() {
+export default function Index() {
   useReveal();
   return (
     <>
+      <Helmet>
+        <title>STRATYX — Transformando dados em decisões</title>
+        <meta
+          name="description"
+          content="Inteligência Artificial aplicada a processos, Business Intelligence e automação. Transformamos dados em estratégia para empresas eficientes."
+        />
+        <meta property="og:title" content="STRATYX — Transformando dados em decisões" />
+        <meta
+          property="og:description"
+          content="IA aplicada, BI, automação e otimização de processos. Clareza estratégica para decisões mais rápidas e assertivas."
+        />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <Header />
       <main>
         <Hero />
