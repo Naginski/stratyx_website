@@ -161,12 +161,16 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  padding-bottom: 0.15em;
+  line-height: 1.15;
 }
 .gradient-text-dark {
   background: linear-gradient(135deg, oklch(0.24 0.06 256), oklch(0.42 0.11 230));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  padding-bottom: 0.15em;
+  line-height: 1.15;
 }
 
 .glow-ring {

@@ -29,9 +29,9 @@ export function Footer() {
                 </svg>
                 (65) 99333-4646
               </a>
-              <a href="mailto:stratyxinteligence@gmail.com" className="flex items-center gap-3 text-white/80 transition-colors hover:text-cyan">
-                <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><path strokeLinecap="round" strokeLinejoin="round" d="M22 6l-10 7L2 6" /></svg>
-                stratyxinteligence@gmail.com
+              <a href="mailto:eduardo.naginski@stratyxbr.com" className="flex items-center gap-3 text-white/80 transition-colors hover:text-cyan">
+                <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><path strokeLinecap="round" strokeLinejoin="round" d="M22 6l-10 7L2 6" /></svg>
+                eduardo.naginski@stratyxbr.com
               </a>
               <a
                 href={WHATSAPP_URL}
@@ -51,7 +51,7 @@ export function Footer() {
             <h4 className="text-xs font-semibold uppercase tracking-widest text-cyan">Redes</h4>
             <div className="mt-5 flex gap-3">
               <a
-                href="https://www.linkedin.com/in/thestratyx"
+                href="https://br.linkedin.com/company/thestratyx"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
