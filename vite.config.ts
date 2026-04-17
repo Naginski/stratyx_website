@@ -10,8 +10,8 @@ function spaFallback(): Plugin {
   return {
     name: "spa-404-fallback",
     apply: "build",
-    closeBundle() {
-      const out = path.resolve(__dirname, "dist");
+    writeBundle(options) {
+      const out = options.dir ?? path.resolve(__dirname, "dist");
       const index = path.join(out, "index.html");
       const notFound = path.join(out, "404.html");
       if (fs.existsSync(index)) {
