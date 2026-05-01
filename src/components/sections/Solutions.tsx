@@ -61,16 +61,16 @@ export function Solutions() {
           {solutions.map((s, i) => (
             <div
               key={s.title}
-              className={`reveal reveal-delay-${(i % 4) + 1} group relative overflow-hidden rounded-3xl border border-border bg-card p-10 shadow-card card-hover`}
+              className={`reveal reveal-delay-${(i % 4) + 1} group relative overflow-hidden rounded-3xl border border-border bg-card p-6 sm:p-10 shadow-card card-hover`}
             >
               <div className="absolute inset-0 bg-gradient-to-br from-cyan/0 via-cyan/0 to-primary/5 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-              <div className="relative flex items-start gap-5">
-                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-primary-glow text-white transition-transform group-hover:scale-110 group-hover:rotate-3">
+              <div className="relative flex flex-col sm:flex-row items-start gap-4 sm:gap-5">
+                <div className="flex h-14 w-14 sm:h-16 sm:w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-primary-glow text-white transition-transform group-hover:scale-110 group-hover:rotate-3">
                   {s.icon}
                 </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-foreground">{s.title}</h3>
-                  <p className="mt-3 leading-relaxed text-muted-foreground">{s.desc}</p>
+                <div className="min-w-0">
+                  <h3 className="text-xl sm:text-2xl font-bold text-foreground break-words">{s.title}</h3>
+                  <p className="mt-3 leading-relaxed text-muted-foreground break-words">{s.desc}</p>
                 </div>
               </div>
               <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-cyan to-primary-glow transition-all duration-500 group-hover:w-full" />

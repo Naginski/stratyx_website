@@ -92,7 +92,7 @@ export function AI() {
           {aiUseCases.map((u, i) => (
             <div
               key={u.title}
-              className={`reveal reveal-delay-${(i % 4) + 1} group relative overflow-hidden rounded-2xl border border-border bg-card/80 p-7 backdrop-blur-sm shadow-card card-hover`}
+              className={`reveal reveal-delay-${(i % 4) + 1} group relative overflow-hidden rounded-2xl border border-border bg-card/80 p-5 sm:p-7 backdrop-blur-sm shadow-card card-hover`}
             >
               <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-gradient-to-br from-cyan/0 to-cyan/30 opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-100" />
               <div className="relative mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary-glow text-white transition-transform group-hover:scale-110 group-hover:-rotate-6">
@@ -105,7 +105,7 @@ export function AI() {
         </div>
 
         {/* Benefits row */}
-        <div className="reveal mt-20 rounded-3xl border border-border bg-gradient-to-br from-primary to-primary-deep p-10 text-white shadow-elegant md:p-14">
+        <div className="reveal mt-20 rounded-3xl border border-border bg-gradient-to-br from-primary to-primary-deep p-6 sm:p-10 text-white shadow-elegant md:p-14">
           <div className="grid gap-10 md:grid-cols-2 md:items-center">
             <div>
               <h3 className="text-3xl font-bold leading-tight md:text-4xl">

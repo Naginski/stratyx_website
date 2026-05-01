@@ -25,14 +25,14 @@ export function Differential() {
           {items.map((it, i) => (
             <div
               key={it.title}
-              className={`reveal reveal-delay-${(i % 4) + 1} group flex items-start gap-5 rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm transition-all hover:border-cyan/40 hover:bg-white/10`}
+              className={`reveal reveal-delay-${(i % 4) + 1} group flex items-start gap-4 sm:gap-5 rounded-2xl border border-white/10 bg-white/5 p-6 sm:p-8 backdrop-blur-sm transition-all hover:border-cyan/40 hover:bg-white/10`}
             >
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-cyan text-cyan-foreground font-bold text-lg">
+              <div className="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-cyan text-cyan-foreground font-bold text-base sm:text-lg">
                 {String(i + 1).padStart(2, "0")}
               </div>
-              <div>
-                <h3 className="text-xl font-bold">{it.title}</h3>
-                <p className="mt-2 text-white/70">{it.desc}</p>
+              <div className="min-w-0">
+                <h3 className="text-lg sm:text-xl font-bold break-words">{it.title}</h3>
+                <p className="mt-2 text-white/70 break-words">{it.desc}</p>
               </div>
             </div>
           ))}

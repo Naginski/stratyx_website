@@ -13,7 +13,7 @@ export function Hero() {
           <span className="h-2 w-2 rounded-full bg-cyan pulse-anim" />
           Inteligência Aplicada
         </span>
-        <h1 className="reveal reveal-delay-1 max-w-5xl text-5xl font-bold leading-[1.05] text-white md:text-7xl">
+        <h1 className="reveal reveal-delay-1 max-w-5xl text-4xl font-bold leading-[1.05] text-white sm:text-5xl md:text-7xl break-words">
           Transformando <span className="gradient-text">dados</span> em <span className="gradient-text">decisões</span>
         </h1>
         <p className="reveal reveal-delay-2 mt-6 max-w-2xl text-lg text-white/80 md:text-xl">
