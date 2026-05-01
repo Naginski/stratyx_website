@@ -140,11 +140,11 @@ export function Agro() {
                 </svg>
               </a>
             </div>
-            <div className="grid grid-cols-2 gap-3 text-sm">
+            <div className="grid grid-cols-2 gap-3 text-xs sm:text-sm">
               {["SAP Agro", "TOTVS Agro", "Aegro", "Siagri", "Telemetria", "Imagens de Satélite", "Climatologia", "Balança/Romaneio"].map((t) => (
                 <div
                   key={t}
-                  className="rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-center font-medium backdrop-blur"
+                  className="flex items-center justify-center rounded-xl border border-white/20 bg-white/10 px-3 py-3 text-center font-medium backdrop-blur break-words min-h-[3rem]"
                 >
                   {t}
                 </div>
