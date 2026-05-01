@@ -105,7 +105,7 @@ export function Agro() {
           {agroSolutions.map((s, i) => (
             <div
               key={s.title}
-              className={`reveal reveal-delay-${(i % 4) + 1} group relative overflow-hidden rounded-2xl border border-border bg-card p-7 shadow-card card-hover`}
+              className={`reveal reveal-delay-${(i % 4) + 1} group relative overflow-hidden rounded-2xl border border-border bg-card p-5 sm:p-7 shadow-card card-hover`}
             >
               <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-cyan/10 blur-2xl transition-all group-hover:bg-cyan/30" />
               <div className="relative mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary-glow text-white">
@@ -118,7 +118,7 @@ export function Agro() {
         </div>
 
         {/* Integration row */}
-        <div className="reveal mt-16 rounded-3xl border border-border bg-gradient-to-br from-primary to-primary-deep p-10 text-white shadow-glow md:p-14">
+        <div className="reveal mt-16 rounded-3xl border border-border bg-gradient-to-br from-primary to-primary-deep p-6 sm:p-10 text-white shadow-glow md:p-14">
           <div className="grid gap-10 md:grid-cols-2 md:items-center">
             <div>
               <h3 className="text-2xl font-bold md:text-3xl">

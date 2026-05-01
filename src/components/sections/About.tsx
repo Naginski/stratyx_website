@@ -58,7 +58,7 @@ export function About() {
           {pillars.map((p, i) => (
             <div
               key={p.title}
-              className={`reveal reveal-delay-${(i % 4) + 1} group relative overflow-hidden rounded-2xl border border-border bg-card p-8 shadow-card card-hover`}
+              className={`reveal reveal-delay-${(i % 4) + 1} group relative overflow-hidden rounded-2xl border border-border bg-card p-6 sm:p-8 shadow-card card-hover`}
             >
               <div className="absolute -right-8 -top-8 h-32 w-32 rounded-full bg-cyan/10 blur-2xl transition-all group-hover:bg-cyan/30" />
               <div className="relative mb-5 inline-flex h-14 w-14 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-primary-glow text-white">
