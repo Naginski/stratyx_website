@@ -5,20 +5,56 @@ type System = { name: string; desc: string };
 
 const areas: { id: string; label: string; systems: System[] }[] = [
   {
-    id: "vendas",
-    label: "Vendas",
+    id: "operacoes",
+    label: "Operações",
     systems: [
       {
-        name: "SDR com IA",
-        desc: "Qualifica leads 24h por dia no WhatsApp e entrega ao vendedor só quem está pronto para comprar.",
+        name: "Automação de processos",
+        desc: "Elimina tarefas repetitivas conectando sistemas, planilhas e pessoas em fluxos com n8n.",
       },
       {
-        name: "Pipeline inteligente",
-        desc: "Organiza o funil, prevê fechamentos e sugere o próximo passo de cada negociação.",
+        name: "Detecção de anomalias",
+        desc: "Monitora a operação em tempo real e alerta sobre falhas, fraudes e desvios.",
       },
       {
-        name: "Gerador de propostas",
-        desc: "Monta propostas comerciais personalizadas em minutos, a partir da conversa com o cliente.",
+        name: "Previsão de demanda",
+        desc: "Antecipa vendas, estoque e sazonalidade para comprar e produzir na medida certa.",
+      },
+    ],
+  },
+  {
+    id: "gestao",
+    label: "Gestão",
+    systems: [
+      {
+        name: "Dashboard executivo",
+        desc: "Todos os números da operação em um painel único, atualizado sozinho.",
+      },
+      {
+        name: "Analista de dados com IA",
+        desc: "Pergunte em português e receba a resposta com gráfico, direto dos seus dados.",
+      },
+      {
+        name: "Relatórios automáticos",
+        desc: "Relatórios gerenciais prontos toda segunda-feira, sem ninguém montar planilha.",
+      },
+    ],
+  },
+  {
+    id: "financeiro",
+    label: "Financeiro",
+    systems: [
+      {
+        name: "Leitura de documentos",
+        desc: "Extrai dados de notas fiscais, boletos e contratos e lança direto no sistema.",
+      },
+      {
+        name: "Fluxo de caixa preditivo",
+        desc: "Projeta entradas e saídas e mostra com antecedência quando o caixa vai apertar.",
+      },
+      {
+        name: "Conciliação automática",
+        desc: "Cruza extratos, ERP e planilhas e aponta só o que precisa de atenção humana.",
       },
     ],
   },
@@ -41,20 +77,20 @@ const areas: { id: string; label: string; systems: System[] }[] = [
     ],
   },
   {
-    id: "financeiro",
-    label: "Financeiro",
+    id: "vendas",
+    label: "Vendas",
     systems: [
       {
-        name: "Leitura de documentos",
-        desc: "Extrai dados de notas fiscais, boletos e contratos e lança direto no sistema.",
+        name: "SDR com IA",
+        desc: "Qualifica leads 24h por dia no WhatsApp e entrega ao vendedor só quem está pronto para comprar.",
       },
       {
-        name: "Fluxo de caixa preditivo",
-        desc: "Projeta entradas e saídas e mostra com antecedência quando o caixa vai apertar.",
+        name: "Pipeline inteligente",
+        desc: "Organiza o funil, prevê fechamentos e sugere o próximo passo de cada negociação.",
       },
       {
-        name: "Conciliação automática",
-        desc: "Cruza extratos, ERP e planilhas e aponta só o que precisa de atenção humana.",
+        name: "Gerador de propostas",
+        desc: "Monta propostas comerciais personalizadas em minutos, a partir da conversa com o cliente.",
       },
     ],
   },
@@ -95,24 +131,6 @@ const areas: { id: string; label: string; systems: System[] }[] = [
     ],
   },
   {
-    id: "operacoes",
-    label: "Operações",
-    systems: [
-      {
-        name: "Automação de processos",
-        desc: "Elimina tarefas repetitivas conectando sistemas, planilhas e pessoas em fluxos com n8n.",
-      },
-      {
-        name: "Detecção de anomalias",
-        desc: "Monitora a operação em tempo real e alerta sobre falhas, fraudes e desvios.",
-      },
-      {
-        name: "Previsão de demanda",
-        desc: "Antecipa vendas, estoque e sazonalidade para comprar e produzir na medida certa.",
-      },
-    ],
-  },
-  {
     id: "agro",
     label: "Agro",
     systems: [
@@ -127,24 +145,6 @@ const areas: { id: string; label: string; systems: System[] }[] = [
       {
         name: "Comercialização e hedge",
         desc: "Acompanha preços, posição vendida e exposição cambial com simulação de cenários.",
-      },
-    ],
-  },
-  {
-    id: "gestao",
-    label: "Gestão",
-    systems: [
-      {
-        name: "Dashboard executivo",
-        desc: "Todos os números da operação em um painel único, atualizado sozinho.",
-      },
-      {
-        name: "Analista de dados com IA",
-        desc: "Pergunte em português e receba a resposta com gráfico, direto dos seus dados.",
-      },
-      {
-        name: "Relatórios automáticos",
-        desc: "Relatórios gerenciais prontos toda segunda-feira, sem ninguém montar planilha.",
       },
     ],
   },
