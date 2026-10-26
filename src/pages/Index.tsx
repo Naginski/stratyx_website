@@ -1,15 +1,17 @@
 import { Helmet } from "react-helmet-async";
 import { useReveal } from "@/hooks/useReveal";
 import { Header } from "@/components/Header";
+import { FloatingCTA } from "@/components/FloatingCTA";
+import { OrbBackground } from "@/components/OrbBackground";
 import { Hero } from "@/components/sections/Hero";
-import { About } from "@/components/sections/About";
-import { Solutions } from "@/components/sections/Solutions";
-import { Agro } from "@/components/sections/Agro";
-import { AI } from "@/components/sections/AI";
-import { AITools } from "@/components/sections/AITools";
-import { Technologies } from "@/components/sections/Technologies";
-import { Differential } from "@/components/sections/Differential";
+import { Diagnostic } from "@/components/sections/Diagnostic";
+import { Team } from "@/components/sections/Team";
+import { Method } from "@/components/sections/Method";
+import { Systems } from "@/components/sections/Systems";
+import { Programs } from "@/components/sections/Programs";
 import { Results } from "@/components/sections/Results";
+import { Plans } from "@/components/sections/Plans";
+import { FAQ } from "@/components/sections/FAQ";
 import { CTA } from "@/components/sections/CTA";
 import { Footer } from "@/components/sections/Footer";
 
@@ -18,32 +20,37 @@ export default function Index() {
   return (
     <>
       <Helmet>
-        <title>STRATYX — Transformando dados em decisões</title>
+        <title>STRATYX — Sistemas de inteligência artificial para empresas</title>
         <meta
           name="description"
-          content="Inteligência Artificial aplicada a processos, Business Intelligence e automação. Transformamos dados em estratégia para empresas eficientes."
+          content="Sistemas de IA que tornam seus processos mais fluidos, rápidos e ágeis. O que antes exigia vários funcionários, uma pessoa passa a controlar."
         />
-        <meta property="og:title" content="STRATYX — Transformando dados em decisões" />
+        <meta
+          property="og:title"
+          content="STRATYX — Sistemas de inteligência artificial para empresas"
+        />
         <meta
           property="og:description"
-          content="IA aplicada, BI, automação e otimização de processos. Clareza estratégica para decisões mais rápidas e assertivas."
+          content="Sistemas de IA para vendas, atendimento, financeiro, marketing, RH, operações e agro. Agende uma Consultoria de IA."
         />
         <meta property="og:type" content="website" />
       </Helmet>
+      <OrbBackground />
       <Header />
       <main>
         <Hero />
-        <About />
-        <Solutions />
-        <Agro />
-        <AI />
-        <AITools />
-        <Technologies />
-        <Differential />
+        <Diagnostic />
+        <Team />
+        <Method />
+        <Systems />
+        <Programs />
         <Results />
+        <Plans />
+        <FAQ />
         <CTA />
       </main>
       <Footer />
+      <FloatingCTA />
     </>
   );
 }
